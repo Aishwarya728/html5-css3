@@ -4,7 +4,7 @@
 	<head>
 		<!-- This is the title-->
 		
-		<title>Title2</title>
+		<title>Crossword</title>
 		<meta name="description" content="">
 		
 		<!-- Mobile viewport optimized -->
@@ -21,24 +21,52 @@
 		<script src="includes/js/modernizr-2.6.2.min.js"></script>
 		
 	</head>
+
+
 	<body>
+	<audio controls> 
+	<source src="music.mp3" type="audio/mp3">
+	</audio>
+
 	
 	<div class="container" id="main">
 
 		<div class="navbar navbar-fixed-top">
 			<div class="container">
+
+				<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+				</button>
 				<a class="navbar-brand" href="#"><img src="images/logo.png" alt="Logo"></a>
 				<div class="nav-collapse collapse navbar-responsive-collapse">
 					<ul class="nav navbar-nav">
 						<li class="active">
-							<a href="#" id="act"><strong>Home</strong></a>
+							<a href="#" id="act" ><strong>Home</strong></a>
 						</li>
 
-						<li>
-							<a href="#" id="service"><strong>Services</strong></a>
-						</li>
-						<li>
-							<a href="#" id="Feedback"><strong>Feedback</strong></a>
+						<li class="dropdown">
+							<a href="#" id="service" class="dropdown-toggle" data-toggle="dropdown"><strong>Services<strong class="caret"></strong></strong></strong></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#"> Books </a>
+								</li>
+								<li>
+									<a href="#"> Toys </a>
+								</li>
+								<li>
+									<a href="#"> Libraries </a>
+								</li>
+								<li>
+									<a href="#"> Stores </a>
+								</li>
+								<li class="divider"></li>
+								<li class="dropdown-header">More Services</li>
+								<li>
+									<a href="#"> Publishing </a>
+								</li>
+							</ul> <!-- end drop down-->
 						</li>
 					</ul>
 
@@ -48,8 +76,28 @@
 					</form> <!-- end nav bar-->
 
 					<ul class="nav navbar-nav pull-right">
-						<li>
-							<a href="#" id="account"><span class="glyphicon glyphicon-user"></span> My Account </a>
+						<li class="dropdown">
+							<a href="#" id="account" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> My Account <strong class="caret"></strong></a>
+
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-wrench"></span> Settings</a>
+								</li>
+
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-refresh"></span> Profile</a>
+								</li>
+
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-briefcase"></span> Orders</a>
+								</li>
+
+								<li class="divider"></li>
+
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-off"></span> Sign Out</a>
+								</li>
+							</ul>
 						</li>
 					</ul> <!-- end nav pull right -->
 
@@ -61,32 +109,229 @@
 
 
 
-			</div>
-
-		</div><!--end nav bar-->
-
-
 		<div class="carousel slide" id="myCarousel">
+
+			<ol class="carousel-indicators">
+				<li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+				<li data-slide-to="1" data-target="#myCarousel"></li>
+				<li data-slide-to="2" data-target="#myCarousel"></li>
+			</ol>
+
+			<!--slides -->
+			<div class="carousel-inner">
+				
+				<div class="item active" id="slide1">
+				</div> <!-- end carousel caption -->
+				
+				<div class="item" id="slide2">
+				</div>
+			
+				<div class="item" id="slide3">
+				</div>
+			</div> <!--carousel inner ends here -->
+
+			<!--arrow controls -->
+
+			<a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="icon-prev"></span></a>
+
+			<a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
+
+			<!-- arrow control ends here -->
 
 		</div> <!-- end myCarousel-->
 
 
+
 		<div class="row" id="bigCallout">
+			<div class="col-12">
+
+				<div class="well well-small visible-sm">
+					<a href="#" class="btn btn-large btn-block btn-default"><span class="glyphicon glyphicon-phone"></span> Call Us </a>
+				</div> <!-- class end well ends here --> 
+
+				<div class="well">
+					<div class="page-header">
+						<h1> Choose Publishing With Us </h1>
+					</div> <!--page header ends here -->
+
+					<p class="lead"> <strong> The C_Road Publications is an altogether new, academically motivated venture of the House of Crossword. Which, for nearly half a century, has functioned across the continents as Cross Publishers. The name in fact, is too well-known to call for any introduction in the global book market. To submit any solicited or unsolicited work, log in to your account and register below! </strong> </p>
+
+					<a href="#" class="btn btn-large btn-danger"> REGISTER </a>
+				</div> <!-- end well class here -->
+
+			</div> <!-- end col 12--> 
 
 		</div> <!--end bigCallout-->
 
 
 		<div class="row" id="featuresHeading">
 
-		</div>
+			<div class="col-12">
+				<h2 id="heading2"><strong>Best Sellers</strong></h2>
+				<p class="lead"> Cross word always helps you to stay updated with the best in market. </p>
+			</div> <!-- end column 12 -->
+		</div> <!-- end featuresHeading --> 
 
 
 		<div class="row" id="features">
+
+			<div class="col-sm-4 feature">
+				<div class="panel">
+					<div class="panel-heading">
+						<h3 class="panel-title"> <strong>The Patient Patient</strong> </h3>
+					</div>
+					<img src="images/image1.jpg" alt="Tushar Rishi" class="img-circle">
+					<p> <br> <strong> Author: Tushar Rishi </strong> </p>
+
+					<a href="https://www.udemy.com/build-beautiful-html5-website/" target="blank" class="btn btn-danger btn-block"> Buy Now </a> 
+				</div> <!-- end panel -->
+
+			</div> <!-- end feature col -->
+
+			<div class="col-sm-4 feature">
+				<div class="panel">
+					<div class="panel-heading">
+						<h3 class="panel-title"> <strong>Wonder</strong> </h3>
+					</div>
+					<img src="images/image2.jpg" alt="Raquel Palacio" class="img-circle">
+					<p> <br><strong> Author: Raquel J. Palacio </strong> </p>
+
+					<a href="https://www.udemy.com/build-beautiful-html5-website/" target="blank" class="btn btn-danger btn-block"> Buy Now </a> 
+				</div> <!-- end panel -->
+				
+			</div> <!-- end feature col -->
+
+			<div class="col-sm-4 feature">
+				<div class="panel">
+					<div class="panel-heading">
+						<h3 class="panel-title"> <strong>The Sense of an Ending </strong> </h3>
+					</div>
+					<img src="images/image3.jpg" alt="Julian Barnes" class="img-circle">
+					<p> <br> <strong> Author: Julian Barnes </strong> </p>
+
+					<a href="https://www.udemy.com/build-beautiful-html5-website/" target="blank" class="btn btn-danger btn-block"> Buy Now </a> 
+				</div> <!-- end panel -->
+				
+			</div> <!-- end feature col -->
 
 		</div> <!-- end features here -->
 
 
 		<div class="row" id="moreInfo">
+			<div class="col-sm-6">
+				<h3> <strong> Upcoming Lit Fest </strong></h3>
+				<div class="tabbable">
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#tab1" data-toggle="tab"><strong>Bangalore Lit Fest 2017</strong></a></li>
+						<li><a href="#tab2" data-toggle="tab"> <strong> Organizers </strong> </a></li>
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane active" id="tab1">
+
+							<h4><span class="glyphicon glyphicon-map-marker"></span> <strong> Location </strong> </h4>
+							
+							<iframe width="100%" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/place/12%C2%B058'54.1%22N+77%C2%B039'39.5%22E/@12.9816916,77.658791,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d12.9816916!4d77.6609797"></iframe>
+							
+							<p style="font-size:16px"><strong>After the massive success of the Under 25 Lit Fest in 2016, we are back and this time, we are taking the Lit Fest to different parts of the country! The Under 25 Lit’ Fest 2017, which is a celebration of the growing community of young writers, poets, literature enthusiasts, avid readers and some of the most acclaimed authors from around the country, will make it's way to Chennai, Pune and Bangalore.We are also going to be doing events in other cities which will cater to niche communities of spoken word artists, stand up comedians and the likes. Expect speaker sessions, workshops, activities, book launches, open mics, slam poetry, pop up libraries and so so much more.</strong></p>
+							
+						</div><!-- end tab-pane -->
+						
+						<div class="tab-pane" id="tab2">
+							<h4>Organizer </h4>
+							
+							<img src="images/thumb.jpg" class="thumbnail pull-left" alt="Organizer">
+							
+							<p style="font-size:16px"><strong>Crossword being one of the organizer, the lit fest will be headed by Vikram seth this year. He is an Indian novelist and poet. He has written several novels and poetry books. He has received several awards including Padma Shri, Sahitya Akademi Award, Pravasi Bharatiya Samman, WH Smith Literary Award and Crossword Book Award. Seth's collections of poetry such as Mappings and Beastly Tales are notable contributions to the Indian English language poetry canon.</strong></p>
+															
+							<hr>
+							
+							<a href="#myModal" role="button" class="btn btn-default" data-toggle="modal"><span class="glyphicon glyphicon-hand-up"></span> Click Here To Register </a>
+
+
+
+							<div class="modal fade" id="myModal" >
+								<div class="modal-dialog" >
+									<div class="modal-content">
+										<div class="modal-header">
+											<button class="close" data-dismiss="modal">&times;</button>
+											
+											<h4 class="modal-title"> <center><strong> Register</strong> </center></h4>
+										</div><!-- end modal-header -->
+										<div class="modal-body">
+											<h4><center> <strong>Fill In The Form </strong> </center></h4>
+											
+											<p><center>All forms shall be accepted on a first come first serve basis</center></p>
+											
+											<center><a href="#" class="btn btn-danger pop" data-toggle="popover" data-placement="top" data-original-title="Make new payment" data-content="Call us"> Click here if unable to register!</a></center>
+											<br>
+											
+											<center>For more details about event schedule, click <a href="#" data-original-title="Event Time Sheets" rel="tooltip">here</a>!</center>
+
+											<hr>
+											
+											<p><center><small class="text-muted"> You will receive a link on registered email to make payments.</small></center></p>
+											
+											<form class="form-horizontal">
+												<div class="form-group">
+													<label class="col-lg-2 control-label" for="inputName">Name</label>
+													<div class="col-lg-10">
+														<input class="form-control" id="inputName" placeholder="Name" type="text">
+													</div>
+												</div>
+												
+												<div class="form-group">
+													<label class="col-lg-2 control-label" for="inputEmail">Email</label>
+													<div class="col-lg-10">
+														<input class="form-control" id="inputEmail" placeholder="Email" type="email">
+													</div>
+												</div>
+
+																				
+												<div class="form-group">
+													<label class="col-lg-2 control-label" for="inputMessage">Query</label>
+													<div class="col-lg-10">
+														<textarea class="form-control" id="inputMessage" placeholder="Do submit if you have any additional query." rows="2"></textarea>
+														<button class="btn btn-default pull-right" type="submit">Send!</button> 
+													</div>
+												</div>
+											</form>
+										</div><!-- end modal-body -->
+							
+										<div class="modal-footer">
+											<button class="btn btn-default" data-dismiss="modal" type="button">Close</button> 
+											<button class="btn btn-default" type="button">Save changes</button>
+										</div><!-- end modal-footer -->
+									</div><!-- end modal-content -->
+								</div><!-- end modal-dialog -->
+							</div><!-- end myModal -->
+
+						</div> <!-- end tab-pane -->
+					</div> <!-- end tab content -->
+				</div> <!-- end tabbale -->
+			</div> <!-- end col-sm-6 -->
+
+			<div class="col-sm-6">
+					<div class="newshead">
+					<h3><strong>The	Cross News</strong></h3>
+					<!-- <p><center><i>The cross news brings you the best of the literary world across the globe.</i></center></p> -->
+					</div>
+					
+					<div class="list-group">
+						<a href="#" class="list-group-item">
+							<br>
+							<h4 class="list-group-item-heading"> <center><strong>The Large Barrel Literary awards</strong></center> </h4>
+							<p class="list-group-item-text"> The Large Barrel literary awards for the year 2017 has been declared for the year 2017 awarding "George & Arthur" critics choice award. The nomination for the next year is now on the roll with the Jury. The finalist will be declared soon.</p>
+						</a>
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading"><center><strong> Ashbery 25th Death Anniversary</strong></center></h4>
+							<p class="list-group-item-text">Much of life consists of quiet, musing moments when we seem to drift outside ourselves; when we are half-awake, half-asleep; moments when we look at something so beautiful or surprising that we wonder, briefly, who we are. This is the feeling Ashbery gives his readers. </p>
+						</a>
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading"><center><strong>'The Heart' takes French Literature by a storm </strong></center></h4>
+							<p class="list-group-item-text">“The Heart” takes place over the course of a single day, but plot is not what drives the narrative. Once the decision is made to donate Simon’s organs, inevitability sets in, and what follows is a foregone conclusion. Instead, the story is propelled by a series of recognitions — incremental, articulated, human moments: narrative earthquakes that break open and pull us deeper into the story.</p>
+						</a>
+					</div><!-- list-group -->
+				</div><!-- end col-sm-6 -->
 
 		</div> <!--end moreInfo -->
 
@@ -98,8 +343,48 @@
 
 	</div> <!-- end container -->
 
+	
 	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-2">
+				<h6>Copyright &copy; StackRoute</h6>
+				</div><!-- end col-sm-2 -->
+				
+				<div class="col-sm-4">
+					<h6><strong>About Us</strong></h6>
+					<p id="About_us"><strong>Crossword aims to be a point of cultural and social interaction where authors and poets hold court, where children are regaled, where people gravitate to be informed, to be entertained, even enlightened. The name embodies the vision of Crossword as a place and space for people who seek information, knowledge or just the pleasure of reading. Crossword stocks the widest range of Books – Movies- Music- Toys- Stationery- Magazines and CD ROM’s.</strong></p>
+				</div><!-- end col-sm-4 -->
+				
+				<div class="col-sm-2">
+					<h6><strong>More</strong></h6>
+					<ul class="unstyled">
+		
+						<li><a href="#">Merchandise</a></li>
+						<li><a href="#">Delivery</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div><!-- end col-sm-2 -->
+				
+				<div class="col-sm-2">
+					<h6><strong>Follow Us</strong></h6>
+					<ul class="unstyled">
+						<li><a href="#">Twitter</a></li>
+						<li><a href="#">Facebook</a></li>
+						<li><a href="#">Google Plus</a></li>
+					</ul>
+				</div><!-- end col-sm-2 -->
 
+				<div class="col-sm-2">
+					<h6><strong>Payment Option</strong></h6>
+					<ul class="unstyled">
+						<li ><a href="#">Cash On Delivery</a></li>
+						<li><a href="#">Net Banking</a></li>
+						<li><a href="#">Debit Cards</a></li>
+					</ul>
+				</div><!-- end col-sm-2 -->
+			</div><!-- end row -->
+		</div><!-- end container -->
 	</footer>
 	
 
